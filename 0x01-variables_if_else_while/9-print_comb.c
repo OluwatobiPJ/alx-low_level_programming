@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-int i;
-for (i = 0; i < 20; i++)
+int ch;
+for (ch = 48; ch<=57; ch++)
 {
-putchar((1 % 10) + '0');
-if (i != 19)
+putchar(ch);
+if (ch != 57)
 {
-putchar(',');
-putchar(' ');
+putchar(44);
+putchar(32);
 }
 }
-putchar('\n');
+putchar(10);
 return (0);
 }
