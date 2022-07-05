@@ -5,22 +5,24 @@
  * Return: always return 0
  */
 int main(void)
+
 {
-int ch;
-int n;
-for (ch = 48; ch <= 57; ch++)
+int p, q;
+for (p = 0; p <= 98; p++)
 {
-for (n = 48; n <= 57; n++)
+for (q = p + 1; q <= 99; q++)
 {
-putchar(ch);
-putchar(n);
-if (ch != 57 || n != 57)
-{
-putchar(44);
-putchar(32);
+putchar((p / 10) + '0');
+putchar((p % 10) + '0');
+putchar(' ');
+putchar((q / 10) + '0');
+putchar((q % 10) + '0');
+if (p == 98 && q == 99)
+continue;
+putchar(',');
+putchar(' ');
 }
 }
-}
-putchar(10);
+putchar('\n');
 return (0);
 }
