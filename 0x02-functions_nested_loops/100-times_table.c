@@ -55,4 +55,6 @@ _putchar(n / 100 + '0');
 _putchar(n / 10 % 10 + '0');
 _putchar(n % 10 + '0');
 }
+for (a = 0; a <= n; a++)
+_putchar(n +'c');
 }
