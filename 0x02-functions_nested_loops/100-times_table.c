@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_table - prints times table for numbers from 0-14
+ * print_times_table - prints times table 
  * @n: An input integer value
  * Return: Nothing
  */
@@ -24,7 +24,7 @@ _putchar('\n');
 
 
 /**
- * putformat - formatted characters to output
+ * putformat - formatted characters sent to output
  * @n: number to format
  * Return: nothing
  */
@@ -39,7 +39,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(n + '0');
 }
-else if (n > 9 && n <= 99)
+if (n > 9 && n <= 99)
 {
 _putchar(',');
 _putchar(' ');
@@ -47,7 +47,7 @@ _putchar(' ');
 _putchar(n / 10 + '0');
 _putchar(n % 10 + '0');
 }
-else
+else if
 {
 _putchar(',');
 _putchar(' ');
@@ -55,4 +55,6 @@ _putchar(n / 100 + '0');
 _putchar(n / 10 % 10 + '0');
 _putchar(n % 10 + '0');
 }
+else
+_putchar(n + '0');
 }
