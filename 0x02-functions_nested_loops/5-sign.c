@@ -1,33 +1,26 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
- * Return: Always 0.
+ * print_sign - check the code for students.
+ * @n: an argument passed
+ * Return: 1, -1, 0.
  */
 
-int main(void)
-
+int print_sign(int n)
 {
-int r;
-r = print_sign(98);
-_putchar(',');
-_putchar(' ');
-_putchar(r + '0');
-_putchar('\n');
-r = print_sign(0);
-_putchar(',');
-_putchar(' ');
-_putchar(r + '0');
-_putchar('\n');
-r = print_sign(0xff);
-_putchar(',');
-_putchar(' ');
-_putchar(r + '0');
-_putchar('\n');
-r = print_sign(-1);
-_putchar(',');
-_putchar(' ');
-_putchar(r + '0');
-_putchar('\n');
+if (n > 0)
+{
+_putchar('+');
+return (1);
+}
+else if (n == 0)
+{
+putchar('0');
 return (0);
+}
+else
+{
+_putchar('-');
+return (-1);
+}
 }
