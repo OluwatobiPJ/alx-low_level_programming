@@ -39,7 +39,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(n + '0');
 }
-if (n > 9 && n <= 99)
+else if (n > 9 && n <= 99)
 {
 _putchar(',');
 _putchar(' ');
