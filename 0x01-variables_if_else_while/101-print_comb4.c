@@ -7,29 +7,26 @@
 int main(void)
 
 {
-int ch;
-int n;
-int m;
-for (ch = 48; ch <= 57; ch++)
+int d, p, q;
+for (d = '0'; d < '9'; d++)
 {
-for (n = 49; n <= 57; n++)
+for (p = d + 1; p <= '9'; p++)
 {
-for (m = 50; m <= 57; n++)
+for (q = p + 1; q <= '9'; q++)
 {
-if (n > ch && m > n)
+if ((p != d) != q)
 {
-putchar(ch);
-putchar(n);
-putchar(m);
-if (ch != 55 || n != 56 || m != 57)
-{
-putchar(44);
-putchar(32);
+putchar(d);
+putchar(p);
+putchar(q);
+if (d == '7' && p == '8')
+continue;
+putchar(',');
+putchar(' ');
 }
 }
 }
 }
-}
-putchar(10);
+putchar('\n');
 return (0);
 }
